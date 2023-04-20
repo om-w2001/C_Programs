@@ -1,0 +1,24 @@
+#include<stdio.h>
+void main(){
+	int x;
+	printf("Enter the ROWS:");
+	scanf("%d",&x);
+	char ch1='a'+x-1;
+	char ch2='A'+x-1;
+	for(int i=1;i<=x;i++){
+		for(int j=1;j<i;j++){
+			printf("  ");
+		}
+		for(int z=i;z<=x;z++){
+			if(i%2==0){
+				printf("%c ",ch1);
+			}
+			else{
+				printf("%c ",ch2);
+			}
+		}
+		printf("\n");
+		ch1--;
+		ch2--;
+	}
+}
